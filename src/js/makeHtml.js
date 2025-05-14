@@ -7,6 +7,7 @@ export function makehtml(data){
                 <p>${item.author}</p>
                 <p>${item.date}</p>
                 <p>${item.article.text}</p>
+                <button class="delete" id="${item.id}">Delete</button>
             </li>`;
         }).join(" ");
     blogList.innerHTML = markup;
